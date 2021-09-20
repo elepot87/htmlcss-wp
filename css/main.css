@@ -145,10 +145,7 @@ section.content .title h3 {
   height: 200px;
   background-size: cover;
   background-position: center;
-}
-
-.col .img-container .wrapper {
-  height: 200px;
+  position: relative;
 }
 
 .col:first-child div.img-container {
@@ -159,6 +156,17 @@ section.content .title h3 {
 }
 .col:last-child div.img-container {
   background-image: url("../img/img-3.jpg");
+}
+
+.img-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
 
 .col h4,
@@ -176,4 +184,18 @@ footer {
 footer .heart {
   color: #ff0000;
   font-size: 25px;
+}
+
+/* Prova */
+
+#img-1 {
+  background-image: url("../img/img-1.jpg");
+}
+
+#img-2 {
+  background-image: url("../img/banner-2.jpg");
+}
+
+#img-3 {
+  background-image: url("../img/img-3.jpg");
 }
