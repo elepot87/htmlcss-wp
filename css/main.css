@@ -52,6 +52,10 @@ body {
   clear: both;
 }
 
+.br-10 {
+  border-radius: 10px;
+}
+
 /* Debug element */
 .debug-box {
   height: 50px;
@@ -92,8 +96,31 @@ nav ul li > a:hover {
 
 /* Hero */
 
-section.hero {
-  background-color: #e1d67a;
+section.hero .banner {
+  width: 100%;
+  height: 470px;
+  background-image: url("../img/banner.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+section.hero .filter {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 470px;
+  position: relative;
+}
+section.hero .filter .text-banner {
+  position: absolute;
+  bottom: 57px;
+  padding-left: 50px;
+  width: 56%;
+  color: #fff;
+}
+
+section.hero .filter .text-banner .title-banner {
+  font-size: 28px;
+  font-weight: 400;
 }
 
 /* Content */
