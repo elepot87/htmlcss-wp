@@ -39,6 +39,10 @@ body {
   padding-right: 16px;
 }
 
+.mt-12 {
+  margin-top: 12px;
+}
+
 .clearfix::after {
   content: " ";
   display: table;
@@ -64,7 +68,7 @@ body {
  */
 
 /* Header */
-header a {
+.brand {
   display: inline-block;
 }
 
